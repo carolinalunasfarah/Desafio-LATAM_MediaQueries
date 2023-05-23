@@ -2,3 +2,34 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    display: grid;
+}
+
+/* nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(114, 126, 57);
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(56, 56, 56);
+}
+
+.fa-tag {
+    padding: 0.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.fa-bars {
+    padding-right: 0.5rem;
+    color: rgb(56, 56, 56);
+}
