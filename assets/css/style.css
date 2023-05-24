@@ -57,7 +57,6 @@ main {
     column-gap: 2rem;
     row-gap: 2rem;
     background-color: white;
-
 }
 
 /* products */
@@ -66,10 +65,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 30rem;
-    min-width: 20rem;
+    min-height: 28rem;
+    min-width: 18rem;
     width: 1rem;
-    border: 1px solid rgb(56, 56, 56);
+    border: 1px solid rgba(56, 56, 56, 0.288);
 }
 
 .card img {
@@ -97,4 +96,20 @@ main {
 
 .product1 {
     grid-area: jacket;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: rgb(114, 126, 57);
+    color: white;
+    margin-top: 2rem;
+}
+
+.fa-facebook {
+    margin-right: 0.2rem;
 }
