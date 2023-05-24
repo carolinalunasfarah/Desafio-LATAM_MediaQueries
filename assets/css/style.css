@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -57,6 +57,11 @@ main {
     column-gap: 2rem;
     row-gap: 2rem;
     background-color: white;
+    grid-template-areas:
+        "jacket"
+        "pages";
+    justify-content: center;
+    padding: 1rem;
 }
 
 /* products */
@@ -68,7 +73,9 @@ main {
     min-height: 28rem;
     min-width: 18rem;
     width: 1rem;
-    border: 1px solid rgba(56, 56, 56, 0.288);
+    border: 1px solid rgba(56, 56, 56, 0.3);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(56, 56, 56, 0.15);
+    border-radius: 5%;
 }
 
 .card img {
@@ -76,17 +83,21 @@ main {
     border-radius: 5%;
 }
 
+.card img:hover {
+    opacity: 80%;
+}
+
 .card h2 {
-    padding-top: 1rem;
+    padding: 1rem 0rem 0.2rem 0rem;
 }
 
 .card button {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     background-color: rgb(114, 126, 57);
     color: white;
     border: 1px solid rgba(56, 56, 56, 0.1);
     height: 2rem;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .card button:hover {
@@ -94,8 +105,32 @@ main {
     cursor: progress;
 }
 
+/* jacket */
 .product1 {
     grid-area: jacket;
+}
+
+/* pages */
+.pages {
+    grid-area: pages;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages p {
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border: 1px solid rgba(56, 56, 56, 0.2);
+    font-weight: 800;
+    color: rgb(114, 126, 57);
+}
+
+.pages p:hover {
+    opacity: 80%;
+    background-color: rgb(114, 126, 57);
+    color: white;
 }
 
 /* footer */
@@ -104,7 +139,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
     background-color: rgb(114, 126, 57);
     color: white;
     margin-top: 2rem;
@@ -112,4 +147,12 @@ footer {
 
 .fa-facebook {
     margin-right: 0.2rem;
+}
+
+.fa-facebook:hover {
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    cursor: pointer;
 }
